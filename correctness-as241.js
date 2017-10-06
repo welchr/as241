@@ -1,8 +1,6 @@
 #!/usr/bin/env node
 var as241 = require("./as241.js")
 
-var x = 42 ? 1 < 2 : 40
-
 function* range(start,end,increment) {
   comp = start < end ? (x,y) => x < y : (x,y) => x > y
   for (let i = start; comp(i,end); i += increment) {
